@@ -1,0 +1,192 @@
+Simulator report for slot_machine
+Thu May 16 16:26:00 2024
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 24 nodes     ;
+; Simulation Coverage         ;      75.00 % ;
+; Total Number of Transitions ; 451          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      75.00 % ;
+; Total nodes checked                                 ; 24           ;
+; Total output ports checked                          ; 24           ;
+; Total output ports with complete 1/0-value coverage ; 18           ;
+; Total output ports with no 1/0-value coverage       ; 5            ;
+; Total output ports with no 1-value coverage         ; 6            ;
+; Total output ports with no 0-value coverage         ; 5            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |slot_machine|T2~reg0      ; |slot_machine|T2~reg0      ; regout           ;
+; |slot_machine|A~reg0       ; |slot_machine|A~reg0       ; regout           ;
+; |slot_machine|cur_state.s2 ; |slot_machine|cur_state.s2 ; regout           ;
+; |slot_machine|cur_state.s4 ; |slot_machine|cur_state.s4 ; regout           ;
+; |slot_machine|Selector4~0  ; |slot_machine|Selector4~0  ; combout          ;
+; |slot_machine|Selector0~0  ; |slot_machine|Selector0~0  ; combout          ;
+; |slot_machine|cur_state.s1 ; |slot_machine|cur_state.s1 ; regout           ;
+; |slot_machine|Selector3~1  ; |slot_machine|Selector3~1  ; combout          ;
+; |slot_machine|Selector2~0  ; |slot_machine|Selector2~0  ; combout          ;
+; |slot_machine|Selector1~0  ; |slot_machine|Selector1~0  ; combout          ;
+; |slot_machine|temp_T2      ; |slot_machine|temp_T2      ; combout          ;
+; |slot_machine|temp_A       ; |slot_machine|temp_A       ; combout          ;
+; |slot_machine|T2           ; |slot_machine|T2           ; padio            ;
+; |slot_machine|A            ; |slot_machine|A            ; padio            ;
+; |slot_machine|clk          ; |slot_machine|clk~corein   ; combout          ;
+; |slot_machine|B2           ; |slot_machine|B2~corein    ; combout          ;
+; |slot_machine|C            ; |slot_machine|C~corein     ; combout          ;
+; |slot_machine|clk~clkctrl  ; |slot_machine|clk~clkctrl  ; outclk           ;
++----------------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                   ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |slot_machine|T1~reg0      ; |slot_machine|T1~reg0      ; regout           ;
+; |slot_machine|Selector6~1  ; |slot_machine|Selector6~1  ; combout          ;
+; |slot_machine|cur_state.s3 ; |slot_machine|cur_state.s3 ; regout           ;
+; |slot_machine|temp_T1      ; |slot_machine|temp_T1      ; combout          ;
+; |slot_machine|T1           ; |slot_machine|T1           ; padio            ;
+; |slot_machine|B1           ; |slot_machine|B1~corein    ; combout          ;
++----------------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                   ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |slot_machine|T1~reg0      ; |slot_machine|T1~reg0      ; regout           ;
+; |slot_machine|Selector6~1  ; |slot_machine|Selector6~1  ; combout          ;
+; |slot_machine|cur_state.s3 ; |slot_machine|cur_state.s3 ; regout           ;
+; |slot_machine|temp_T1      ; |slot_machine|temp_T1      ; combout          ;
+; |slot_machine|T1           ; |slot_machine|T1           ; padio            ;
++----------------------------+----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu May 16 16:25:59 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off slot_machine -c slot_machine
+Info: Using vector source file "C:/Users/abc89/OneDrive/¤å¥ó/ºÓ½Ò/VHDL/HW3/slot_machine/slot_machine.vwf"
+Warning: Wrong node type and/or width for node "|slot_machine|cur_state" in vector source file. Node in design is of type Enum and of width 1, but node in vector source file is of type 9-Level and of width 1.
+Warning: Signal name "|slot_machine|cur_state" changed to enum type
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      75.00 %
+Info: Number of transitions in simulation is 451
+Info: Quartus II Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 155 megabytes
+    Info: Processing ended: Thu May 16 16:26:00 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

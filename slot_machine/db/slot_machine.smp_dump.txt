@@ -1,0 +1,7 @@
+
+State Machine - |slot_machine|cur_state
+Name cur_state.s4 cur_state.s3 cur_state.s2 cur_state.s1 
+cur_state.s1 0 0 0 0 
+cur_state.s2 0 0 1 1 
+cur_state.s3 0 1 0 1 
+cur_state.s4 1 0 0 1 

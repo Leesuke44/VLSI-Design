@@ -1,0 +1,20 @@
+|slot_machine
+C => Selector2.IN3
+C => Selector0.IN1
+C => Selector1.IN2
+B1 => Selector6.IN1
+B1 => temp_A~0.IN1
+B1 => next_state.s3.DATAB
+B1 => temp_T2~0.OUTPUTSELECT
+B1 => next_state~0.OUTPUTSELECT
+B2 => temp_A~0.IN0
+B2 => temp_T2~0.DATAA
+B2 => next_state~0.DATAA
+clk => A~reg0.CLK
+clk => T1~reg0.CLK
+clk => T2~reg0.CLK
+T1 <= T1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+T2 <= T2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
